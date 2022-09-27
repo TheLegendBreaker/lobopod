@@ -1,0 +1,47 @@
+mixin tipCTA(msg)
+	.tip-cta
+		.tip-cta__msg= msg
+		a.tip-cta__link(href="https://www.buymeacoffee.com/hectorDiaz") Send a Tip
+
+mixin bookMarkCTA
+	.book-mark-cta
+		.book-mark-cta__msg Want to join in? Bookmark this page in your browser.
+
+mixin artCard(day, prompt, imgSrc, imgAlt)
+	.art-card
+		.art-card__img
+			img(src=imgSrc alt=imgAlt)
+		.art-card__prompt
+			span= day
+			span= prompt
+
+mixin referenceCard(promptDesc, link, linkLabel, imgSrc, imgAlt)
+	.reference-card
+		.reference-card__img
+			img(src=imgSrc alt=imgAlt)
+		.reference-card__prompt-desc= promptDesc
+		a.reference-card__link(href=link)=linkLabel
+
+mixin promptCard(day, prompt, imgSrc, imgALt, promptDesc, link, linkLabel, refSrc, refAlt)
+	.prompt-card
+		.prompt-card__complete
+			+ artCard(day, prompt, imgSrc, imgAlt)
+		.prompt-card__details
+			+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)
+		+ tipCTA("like the project?")
+
+mixin contactCard(body, email)
+	article#contact.contact-card
+		h2 Contact
+		.contact-card__body= body
+		.contact-card__email= email
+		+ tipCTA("like the project?")
+
+mixin topBar
+	header.top-bar
+		.top-bar__log
+			img(src="logo" alt="lobobod-tober logo")
+		.top-bar__nav
+			nav
+				a.top-bar__nav-link(href="#about") About
+				a.top-bar__nav-link(href="") Leave a Tip

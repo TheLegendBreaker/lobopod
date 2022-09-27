@@ -1,0 +1,15 @@
+{
+	"name": "lobopod",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "pug src/pug/index.pug  -o dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"pug": "^3.0.2"
+	}
+}

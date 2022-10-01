@@ -1,0 +1,30 @@
+@use "mixins";
+.prompt-card {
+	&__title {
+		&-date {
+			display: inline-block;
+			padding-right: 20px;
+		}
+		&-prompt {
+			display: inline-block;
+		}
+	}
+}
+.reference-card--prompt {
+	.reference-card {
+		&__example {
+			margin: 15px 0;
+			@include mixins.tablet {
+				max-height: 300px;
+				overflow: hidden;
+			}
+		}
+		&__prompt-desc {
+			margin: 15px 0;
+		}
+		&__link {
+			display: inline-block;
+			margin: 15px 0;
+		}
+	}
+}

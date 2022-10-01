@@ -4,12 +4,13 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "pug src/pug/index.pug  -o dist"
+		"dev": "pug src/pug/index.pug -O src/pug/prompts.json -o dist && sass ./src/scss/index.scss ./dist/style.css && cp src/graphics/*.png ./dist/ && cp src/scripts/*.js ./dist/ && real-favicon inject faviconData.json dist htmlFiles/*.html"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "MIT",
 	"devDependencies": {
-		"pug": "^3.0.2"
+		"pug": "^3.0.2",
+		"sass": "^1.55.0"
 	}
 }

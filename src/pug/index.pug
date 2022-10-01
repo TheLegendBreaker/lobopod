@@ -1,10 +1,9 @@
 extends ./layout/layout.pug
 block body
 	+ topBar
-	main
+	main.main
 		include about
 		include prompts
 		include aboutMe
-		include references
 		+ contactCard("body", "email")
 	

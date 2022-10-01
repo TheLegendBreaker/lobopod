@@ -5,6 +5,8 @@ html(lang='en')
 		include ./head.pug
 		block head
 		block inlineStyles
+			link(rel="stylesheet" href="https://static.hectordiaz.pro/fonts/blood_of_dracula/blood_of_dracula.css")
+			link(rel="stylesheet" href="https://static.hectordiaz.pro/fonts/mont/stylesheet.css")
 			link(rel="stylesheet" href="style.css")
 			style
 				block styles
@@ -12,10 +14,11 @@ html(lang='en')
 		block title
 			title draw lobopods
 
-	body
+	body.body
 		block body
 
 		block footer
 			include footer.pug
 
 		block scripts
+	include ./linkedScripts

@@ -1,5 +1,5 @@
 mixin tipCTA(msg)
-	.tip-cta
+	.tip-cta&attributes(attributes)
 		.tip-cta__msg= msg
 		a.tip-cta__link(href="https://www.buymeacoffee.com/hectorDiaz") Send a Tip
 
@@ -8,27 +8,31 @@ mixin bookMarkCTA
 		.book-mark-cta__msg Want to join in? Bookmark this page in your browser.
 
 mixin artCard(day, prompt, imgSrc, imgAlt)
-	.art-card
-		.art-card__img
-			img(src=imgSrc alt=imgAlt)
+	.art-card&attributes(attributes)
+		div
+			img.art-card__img(src=imgSrc alt=imgAlt)
 		.art-card__prompt
-			span= day
-			span= prompt
+			span.art-card__day= day
+			span.art-card__desc= prompt
 
 mixin referenceCard(promptDesc, link, linkLabel, imgSrc, imgAlt)
-	.reference-card
-		.reference-card__img
-			img(src=imgSrc alt=imgAlt)
-		.reference-card__prompt-desc= promptDesc
-		a.reference-card__link(href=link)=linkLabel
+	div(class="reference-card")&attributes(attributes)
+		.reference-card__example
+			img.reference-card__example-img(src=imgSrc alt=imgAlt)
+		.reference-card__txt
+			.reference-card__prompt-desc= promptDesc
+			a.reference-card__link(href=link)=linkLabel
 
-mixin promptCard(day, prompt, imgSrc, imgALt, promptDesc, link, linkLabel, refSrc, refAlt)
-	.prompt-card
-		.prompt-card__complete
-			+ artCard(day, prompt, imgSrc, imgAlt)
-		.prompt-card__details
-			+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)
-		+ tipCTA("like the project?")
+mixin promptCard(day, prompt, desc, link, linkLabel, refSrc, refAlt)
+	article.prompt-card&attributes(attributes)
+		.prompt-card__body
+			.prompt-card__title
+				.prompt-card__title-date=day
+				.prompt-card__title-prompt=prompt
+			.prompt-card__complete
+			.prompt-card__details
+				+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)(class="reference-card--prompt reference-card--hidden-mobile")
+			+ tipCTA("Like the projct?")(class="tip-cta--prompt")
 
 mixin contactCard(body, email)
 	article#contact.contact-card
@@ -39,8 +43,6 @@ mixin contactCard(body, email)
 
 mixin topBar
 	header.top-bar
-		.top-bar__log
-			img(src="logo" alt="lobobod-tober logo")
 		.top-bar__nav
 			nav
 				a.top-bar__nav-link(href="#about") About

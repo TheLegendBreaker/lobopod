@@ -84,14 +84,14 @@ const renderLatestPost = (article, data) => {
 };
 const renderGalleryPost = (article, data) => {
 	let markUp = "";
-	markUp += '<div class="prompt-card__complete-img-box">';
+	markUp += '<figure class="prompt-card__complete-img-box">';
 	markUp += '<img class="prompt-card__complete-img"';
 	markUp += 'src="' + data._embedded["wp:featuredmedia"][0].source_url + '"';
 	markUp += 'alt="' + data.title.rendered + '">';
-	markUp += "</div> ";
-	markUp += '<div class="prompt-card__complete-body">';
+	markUp += '<figcaptioin class="prompt-card__complete-body">';
 	markUp += data.content.rendered;
-	markUp += "</div>";
+	markUp += "</figcaptioin>";
+	markUp += "</figure> ";
 	article.innerHTML = markUp;
 };
 const renderPost = (article, data) => {

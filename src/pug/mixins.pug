@@ -26,13 +26,15 @@ mixin referenceCard(promptDesc, link, linkLabel, imgSrc, imgAlt)
 mixin promptCard(day, prompt, desc, link, linkLabel, refSrc, refAlt)
 	article.prompt-card&attributes(attributes)
 		.prompt-card__body
-			.prompt-card__title
+			h3.prompt-card__title
 				.prompt-card__title-date=day
-				.prompt-card__title-prompt=prompt
 			.prompt-card__complete
 			.prompt-card__details
 				+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)(class="reference-card--prompt reference-card--hidden-mobile")
 			+ tipCTA("Like the projct?")(class="tip-cta--prompt")
+			.prompt-card__title
+				.prompt-card__title-date=day
+				.prompt-card__title-prompt=prompt
 
 mixin contactCard(body, email)
 	article#contact.contact-card

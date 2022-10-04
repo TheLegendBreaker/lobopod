@@ -122,6 +122,9 @@
 					max-width: 80%;
 					left: 50%;
 				}
+				@include mixins.laptop {
+					width: auto;
+				}
 				&:before {
 					text-decoration: underline;
 					position: absolute;
@@ -145,15 +148,25 @@
 			.prompt-card__complete {
 				max-height: 300px;
 				overflow: scroll;
+				@include mixins.laptop {
+					overflow: auto;
+				}
 				&-img-box {
 					height: 215px;
 					@include mixins.tablet {
 						height: 300px;
 					}
+					@include mixins.laptop {
+						height: auto;
+					}
 				}
 				&-img {
 					height: 100%;
 					width: auto;
+					@include mixins.laptop {
+						height: auto;
+						width: 100%;
+					}
 				}
 				&-body {
 					max-height: 75px;

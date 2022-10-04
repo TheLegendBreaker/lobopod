@@ -18,6 +18,10 @@
 				max-height: 300px;
 				overflow: hidden;
 			}
+			@include mixins.laptop {
+				max-height: none;
+				overflow: auto;
+			}
 		}
 		&__prompt-desc {
 			margin: 15px 0;

@@ -1,0 +1,256 @@
+{
+	"prompts": [
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
+			"label": "T-Rex + Lobopod",
+			"cssId": "t-rex",
+			"day": "10/1",
+			"desc": ""
+		},
+		{
+			"referenceImg": "https://i.pinimg.com/564x/b8/c0/e3/b8c0e3a331b2a3ac5a640deee134631f.jpg",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/102-cat-+-lobopod/",
+			"label": "Cat + Lobopod",
+			"cssId": "cat",
+			"day": "10/2",
+			"desc": ""
+		},
+		{
+			"referenceImg": "https://i.pinimg.com/564x/64/4d/fe/644dfe38b44b20ce15286073161f2cad.jpg",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/103-cyber-lobopod/",
+			"label": "Cyber Lobopod",
+			"cssId": "cyber",
+			"day": "10/3",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/104-retro-halloween-decor-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/78/c5/81/78c581ce5c8db1517ff7c129f68b85b8.jpg",
+			"label": "Vintage Halloween decor + Lobopod",
+			"cssId": "decor",
+			"day": "10/4",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/105-eyeballs-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/0d/57/64/0d57643a468d25ec1d1f161f13a4f15c.jpg",
+			"label": "Eyeballs + Lobopod",
+			"cssId": "eye",
+			"day": "10/5",
+			"desc": ""
+		},
+		{
+			"referenceImg": "https://i.pinimg.com/564x/84/15/77/8415777b385ceb6b1ca544e7fa97103c.jpg",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/106-lobopod-+-van/",
+			"label": "Van + Lobopod",
+			"cssId": "van",
+			"day": "10/6",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/107-lisa-frank-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/736x/75/bb/c2/75bbc23507873318025bc3daa0d2c97e.jpg",
+			"label": "Lisa Frank + Lobopod",
+			"cssId": "lisa-frank",
+			"day": "10/7",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/108-baphomet-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/51/27/14/5127148b7da02d37e93f0786d5451358.jpg",
+			"label": "Baphomet + Lobopod",
+			"cssId": "baphomet",
+			"day": "10/8",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/109-pico-cad-lobopod/",
+			"referenceImg": "https://i.pinimg.com/originals/3c/46/7d/3c467deee8f903f953a428c925f79df3.gif",
+			"label": "PICO CAD+ Lobopod",
+			"cssId": "pico",
+			"day": "10/9",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1010-ghostly-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/fa/35/4e/fa354ef0a5b9fd62a325212deb8bc807.jpg",
+			"label": "Ghost + Lobopod",
+			"cssId": "ghost",
+			"day": "10/10",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1011-lobopod-dragon/",
+			"referenceImg": "https://i.pinimg.com/564x/a3/68/c8/a368c8acd71cef355996fb9dd1f1fecd.jpg",
+			"label": "Dragon+ Lobopod",
+			"cssId": "dragon",
+			"day": "10/11",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1012-zoid-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/0b/8b/37/0b8b37318f4301c77a2fc163e33d6547.jpg",
+			"label": "Zoid + Lobopod",
+			"cssId": "zoid",
+			"day": "10/12",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1013-lobopod-infected-with-fungus/",
+			"referenceImg": "https://i.pinimg.com/564x/4c/c8/57/4cc8575eb65017c68eabf44b309a7f50.jpg",
+			"label": "Lobopod infected with fungus",
+			"cssId": "fungus",
+			"day": "10/13",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1014-harvestmen-+-lobopod-1/",
+			"referenceImg": "https://i.pinimg.com/564x/9e/79/db/9e79dbaa23f88e6e9bf8528cc3726ebd.jpg",
+			"label": "Harvestmen + Lobopod 1",
+			"cssId": "harvestmen1",
+			"day": "10/14",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1015-squish-mallow-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/f4/af/7c/f4af7cc3afadfd3333c2d48156b91cf9.jpg",
+			"label": "Squish-mallow + Lobopod",
+			"cssId": "squish",
+			"day": "10/15",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1016-cerberus-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/9c/73/05/9c73050e32c6b998c7ab677dd2429698.jpg",
+			"label": "Cerberus + Lobopod",
+			"cssId": "cerberus",
+			"day": "10/16",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1017-lobopod-a-space-odyssey/",
+			"referenceImg": "https://i.pinimg.com/564x/04/fe/56/04fe56d97450e2d3df21ed9395f73902.jpg",
+			"label": "Lobopod, a Space Odyssey",
+			"cssId": "space",
+			"day": "10/17",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1018-moth-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/3b/86/2a/3b862aaf6d01eb27b65d945e30fee43c.jpg",
+			"label": "Moth + Lobopod",
+			"cssId": "moth",
+			"day": "10/18",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1019-pile-of-skulls-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/e0/84/4d/e0844d03802488b50a2fdd6a0b7f6f06.jpg",
+			"label": "Pile of Skulls + Lobopod",
+			"cssId": "skulls",
+			"day": "10/19",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1020-plasticine-clay-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/originals/22/81/14/228114861341387922a7dce81e7912d8.gif",
+			"label": "Plasticine clay + Lobopod",
+			"cssId": "clay",
+			"day": "10/20",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1021-unicorn-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/3c/e7/d9/3ce7d9df343d7bdacf806bb330ebd362.jpg",
+			"label": "Unicorn + Lobopod",
+			"cssId": "unicorn",
+			"day": "10/21",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1022-kaiju-poster-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/a3/2f/ec/a32fec4fc95eeb5da2c7a05f474dd734.jpg",
+			"label": "Kaiju poster + Lobopod",
+			"cssId": "kaiju",
+			"day": "10/22",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1023-lobopod-+-harvestmen-2/",
+			"referenceImg": "https://i.pinimg.com/564x/39/55/b8/3955b851e3c94165ce89327aa3a723b3.jpg",
+			"label": "harvestmen + Lobopod 2",
+			"cssId": "harvestmen2",
+			"day": "10/23",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1024-lobopod-as-a-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/07/c0/8e/07c08ed0412d0a19fd3fa567eac09b1e.jpg",
+			"label": "'Lobopod' as a Lobopod",
+			"cssId": "word",
+			"day": "10/24",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1025-castle-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/16/9b/ab/169bab48c027b8c221f4af0752001b3b.jpg",
+			"label": "Castle + Lobopod",
+			"cssId": "castle",
+			"day": "10/25",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1026-flames-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/c9/14/05/c91405659079149b8caf89db1e78140a.jpg",
+			"label": "Flames + Lobopod",
+			"cssId": "flames",
+			"day": "10/26",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1027-lobopod-self-portrait/",
+			"referenceImg": "https://i.pinimg.com/564x/45/59/9c/45599cc5023306a0a335e86a8c72643a.jpg",
+			"label": "Self portrait+ Lobopod",
+			"cssId": "portrait",
+			"day": "10/27",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
+			"label": "T-Rex + Lobopod",
+			"complete": false,
+			"cssId": "t-rex",
+			"day": "10/1",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
+			"label": "T-Rex + Lobopod",
+			"complete": false,
+			"cssId": "t-rex",
+			"day": "10/1",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
+			"label": "T-Rex + Lobopod",
+			"complete": false,
+			"cssId": "t-rex",
+			"day": "10/1",
+			"desc": ""
+		},
+		{
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
+			"label": "T-Rex + Lobopod",
+			"complete": false,
+			"cssId": "t-rex",
+			"day": "10/1",
+			"desc": ""
+		}
+	]
+}

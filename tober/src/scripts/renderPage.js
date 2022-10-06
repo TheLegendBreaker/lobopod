@@ -1,6 +1,5 @@
 setSiteLabel("lobopod");
 const removeClass = (el, trgtClass) => {
-	console.log(el);
 	if (el) el.classList.remove(trgtClass);
 };
 const addClass = (el, newClass) => {
@@ -20,19 +19,19 @@ openBtns.forEach((btn) => {
 });
 
 promptCards.forEach((card) => {
-	let toggleInspectCard = () => {
+	const toggleInspectCard = () => {
 		const reference = card.querySelector(".reference-card--completed"),
 			activeClass = "prompt-card--detached",
 			active = document.querySelector("." + activeClass);
 
-		removeClass(reference, "reference-card--hidden-mobile");
+		removeClass(reference, "reference-card--hidden-img");
 		toggleClass(card, activeClass);
 
 		if (active) {
 			const activeReference = active.querySelector(
 				".reference-card--completed"
 			);
-			addClass(activeReference, "reference-card--hidden-mobile");
+			addClass(activeReference, "reference-card--hidden-img");
 			removeClass(active, activeClass);
 		}
 	};
@@ -104,18 +103,42 @@ renderFirstPost = function (cssSelector, response) {
 };
 
 renderPromptGallery = function () {
-	console.log("renderPromptGallery");
+	getPostByCategory("prompt-list")
+		.then((response) => {
+			const parent = document.querySelector(".prompts"),
+				container = document.createElement('div'),
+				title = document.createElement('h2'),
+				body = document.createElement('div');
+
+			title.classList.add('prompts__intro-title')
+			container.classList.add('prompts__intro')
+			body.classList.add('prompts__intro-body')
+
+			title.innerText = response[0].title.rendered;
+			body.innerHTML = response[0].content.rendered;
+
+			container.prepend(body);
+			container.prepend(title);
+
+			parent.prepend(container);
+		})
+		.catch((e) => console.log(e));
+
 	getPostByCategory("complete")
 		.then((response) => {
 			const cssSelector = ".prompt-card__complete";
 			const articles = document.querySelectorAll(cssSelector);
+
 			let article;
 			response.forEach((data, i) => {
 				article = articles[i];
 				const parent = getParentByClass(article, "prompt-card--gallery"),
 					reference = parent.querySelector(".reference-card--prompt");
-				if (reference) reference.classList.add("reference-card--completed");
-				reference.classList.remove("reference-card--prompt");
+				if (reference) {
+					reference.classList.add("reference-card--hidden-img");
+					reference.classList.add("reference-card--completed");
+					reference.classList.remove("reference-card--prompt");
+				}
 				renderGalleryPost(article, data);
 			});
 		})

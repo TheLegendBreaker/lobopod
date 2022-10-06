@@ -28,6 +28,8 @@
 	}
 	& * {
 		box-sizing: border-box;
+	}
+	&> * {
 		font-family: mont;
 	}
 	h1,

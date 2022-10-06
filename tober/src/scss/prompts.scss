@@ -3,8 +3,8 @@
 	border-bottom: solid 1px #000;
 	padding-bottom: 30px;
 	margin: 30px 0;
-	&__title {
-		margin: 60px auto 15px auto;
+	&__intro {
+		margin: 60px auto 30px auto;
 		max-width: 1200px;
 		width: 100%;
 	}
@@ -66,7 +66,7 @@
 			}
 			&--hide {
 				position: sticky;
-				bottom: 0;
+				bottom: 1px;
 			}
 			&--hidden {
 				position: absolute;
@@ -84,18 +84,45 @@
 	vertical-align: top;
 	max-width: 50%;
 	padding: 10px;
+	width: 100%;
 	@include mixins.tablet {
 		max-width: 33%;
 	}
 	@include mixins.desktop {
+		transition: 
+		.3s box-shadow ease-in-out,
+		.3s transform ease-in-out;
+		//border-right: solid 1px #333;
+		border-left: solid 1px #333;
 		max-width: 14.28%;
+		&:hover {
+			box-shadow: 0 0 10px 3px #333;
+			background-color: #fff;
+			transform: scale(1.03);
+			.prompt-card__view-btn{
+				transform: scale(1.3);
+			}
+		}
+		.prompt-card__view-btn{
+			transition: .3s transform ease-in-out;
+		}
 	}
 	&.prompt-card {
 		.tip-cta {
 			display: none;
 		}
 		&--detached {
-			outline: dotted 1px #333;
+			box-shadow: inset 0px 0px 6px 0px #333;
+			height: 285px;
+			@include mixins.laptop {
+				transition: unset;
+				height: 330px;
+				&:hover {
+					//background-color: #fff;
+					box-shadow: inset 0px 0px 6px 0px #333;
+					transform: unset;
+				}
+			}
 			&:before {
 				background: #333;
 				content: "";
@@ -123,7 +150,7 @@
 					left: 50%;
 				}
 				@include mixins.laptop {
-					width: auto;
+					width: 800px;
 				}
 				&:before {
 					text-decoration: underline;
@@ -145,6 +172,9 @@
 					}
 				}
 			}
+			.prompt-card__view-btn {
+				display: none;
+			}
 			.prompt-card__complete {
 				max-height: 300px;
 				overflow: scroll;
@@ -157,6 +187,7 @@
 						height: 300px;
 					}
 					@include mixins.laptop {
+						max-height: 45vh;
 						height: auto;
 					}
 				}
@@ -181,11 +212,25 @@
 			.tip-cta {
 				display: block;
 			}
+			.reference-card__example {
+				@include mixins.laptop {
+					height: 450px;
+				}
+				&-img {
+				}
+			}
 			.reference-card--completed {
 				.reference-card__example {
 					height: 50px;
 					@include mixins.smart-phone() {
 						height: 100px;
+					}
+					&-img {
+						max-height: none;
+						min-height: auto;
+						min-width: auto;
+						height: 100%;
+						width: auto;
 					}
 				}
 			}
@@ -193,32 +238,14 @@
 	}
 	.prompt-card {
 		&__complete {
-			max-height: 170px;
+			max-height: 100%;
 			overflow: hidden;
-		}
-	}
-	.reference-card--completed {
-		&.reference-card--hidden-mobile {
-			position: absolute;
-			opacity: 0;
-		}
-		.reference-card__example {
-			overflow: hidden;
-			height: 65px;
-			&-img {
-				transform: translateX(-50%);
-				margin-left: 50%;
-				max-width: none;
-				height: 100%;
-				width: auto;
+			&-img-box {
+				height: 150px;
+				margin: 0;
 			}
-		}
-	}
-	.reference-card--prompt {
-		.reference-card__example {
 			&-img {
-				max-width: 100%;
-				height: auto;
+				height: 100%;
 			}
 		}
 	}

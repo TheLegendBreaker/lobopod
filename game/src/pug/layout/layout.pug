@@ -1,0 +1,22 @@
+include ../mixins
+doctype html
+html(lang='en')
+	head
+		include ./head.pug
+		block head
+		block inlineStyles
+			link(rel="stylesheet" href="/game/dist/style.css")
+			style
+				block styles
+
+		block title
+			title draw lobopods
+
+	body.body
+		block body
+
+		block footer
+			include footer.pug
+
+		block scripts
+	include ./linkedScripts

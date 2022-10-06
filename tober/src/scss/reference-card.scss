@@ -8,10 +8,14 @@
 			&__example {
 				vertical-align: middle;
 				display: inline-block;
+				overflow: hidden;
 				max-width: 40%;
+				height: 65px;
 				&-img {
-					max-width: 100%;
-					height: auto;
+					transform: translateX(-50%);
+					margin-left: 50%;
+					height: 100%;
+					width: auto;
 				}
 			}
 			&__txt {
@@ -20,6 +24,23 @@
 				padding-left: 10px;
 				max-width: 60%;
 			}
+		}
+	}
+	&--hidden-img {
+		border-bottom: none;
+		border-top: none;
+		padding: 0;
+		margin: 0;
+		.reference-card__example {
+			display: none;
+		}
+		.reference-card__txt {
+			padding: 0;
+			max-width: none;
+		}
+		.reference-card__link {
+			display: inline-block;
+			margin: 15px 0;
 		}
 	}
 }

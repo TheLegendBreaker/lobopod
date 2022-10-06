@@ -25,16 +25,16 @@ mixin referenceCard(promptDesc, link, linkLabel, imgSrc, imgAlt)
 
 mixin promptCard(day, prompt, desc, link, linkLabel, refSrc, refAlt)
 	article.prompt-card&attributes(attributes)
+		button.prompt-card__view-btn view
 		.prompt-card__body
-			h3.prompt-card__title
-				.prompt-card__title-date=day
 			.prompt-card__complete
 			.prompt-card__details
-				+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)(class="reference-card--prompt reference-card--hidden-mobile")
-			+ tipCTA("Like the projct?")(class="tip-cta--prompt")
-			.prompt-card__title
+				+ referenceCard(promptDesc, link, linkLabel, refSrc, refAlt)(class="reference-card--prompt")
+			h3.prompt-card__title
 				.prompt-card__title-date=day
 				.prompt-card__title-prompt=prompt
+			+ tipCTA("Like the projct?")(class="tip-cta--prompt")
+			//-.prompt-card__title
 
 mixin contactCard(body, email)
 	article#contact.contact-card
@@ -48,4 +48,5 @@ mixin topBar
 		.top-bar__nav
 			nav
 				a.top-bar__nav-link(href="#about") About
-				a.top-bar__nav-link(href="") Leave a Tip
+				a.top-bar__nav-link(href="#contact") Contact
+				a.top-bar__nav-link(href="https://www.buymeacoffee.com/hectorDiaz") Leave a Tip

@@ -217,39 +217,35 @@
 			"desc": ""
 		},
 		{
-			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
-			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
-			"label": "T-Rex + Lobopod",
-			"complete": false,
-			"cssId": "t-rex",
-			"day": "10/1",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1028-lobopod-chest-burster/",
+			"referenceImg": "https://i.pinimg.com/564x/27/01/9c/27019ce10b646bfde41867aa643e4454.jpg",
+			"label": "Chest-burster + Lobopod",
+			"cssId": "burst",
+			"day": "10/28",
 			"desc": ""
 		},
 		{
-			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
-			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
-			"label": "T-Rex + Lobopod",
-			"complete": false,
-			"cssId": "t-rex",
-			"day": "10/1",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1029-lobopod-who-swallowed-a-god/",
+			"referenceImg": "https://i.pinimg.com/564x/fe/34/9a/fe349aac0f0815334a782717ccaf53de.jpg",
+			"label": "Lobopod who swallowed a god",
+			"cssId": "swallowed",
+			"day": "10/29",
 			"desc": ""
 		},
 		{
-			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
-			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
-			"label": "T-Rex + Lobopod",
-			"complete": false,
-			"cssId": "t-rex",
-			"day": "10/1",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1030-40s-horror-comic-cover-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/f0/ab/0e/f0ab0ec3388ea793b964ca44e8bf607e.jpg",
+			"label": "40's Horror comic cover + Lobopod",
+			"cssId": "horror",
+			"day": "10/30",
 			"desc": ""
 		},
 		{
-			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/101-t-rex-+-lobopod/",
-			"referenceImg": "https://i.pinimg.com/564x/5a/3c/f7/5a3cf731a26ba392c20c67dd2fa60599.jpg",
-			"label": "T-Rex + Lobopod",
-			"complete": false,
-			"cssId": "t-rex",
-			"day": "10/1",
+			"referenceLink": "https://www.pinterest.com/dulcemacho/lobopod-tober/1031-8-bit-+-lobopod/",
+			"referenceImg": "https://i.pinimg.com/564x/66/34/15/6634156d5b76a3e271fda1ff737438e5.jpg",
+			"label": "8-Bit	+ Lobopod",
+			"cssId": "bit",
+			"day": "10/31",
 			"desc": ""
 		}
 	]

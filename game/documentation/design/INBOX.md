@@ -21,11 +21,24 @@ A console or HUD style pet simulator
 Basic Pattern:
 
 1. interact w/ pet
+   - take pics of
+   - bake treats
+   - craft food
    - dress up
+   - cuddle
+   - tricks
    - clean
    - feed
    - play
    - chat
+
+Quality interactions:
+	- Relatable dialogue choices.
+	- engaging animations
+		- everything feels great and interactions feel more substantial than a click or a press.
+	- engaging animations
+
+- Quest dialogue tress must complete w/in 3 steps.
 
 - get tools
   - sell virtual your virtual organs
@@ -39,6 +52,22 @@ Basic Pattern:
     - w/ NPCs
     - w/ Scenes
   - rewards for satisfying stewardship
+
+Game play pay off:
+	- Dope screen saver
+	- Collecting Lobopods
+	- Gaining accerss to new:
+		- maps/terreriums
+		- reciepes
+		- outfits
+		- tools
+	- The potion craft's individual potion's animation, and the individualized lobopod eating animation.
+	- quest narration:
+		- surprising
+		- dark humor
+		- bemusing
+		- funny
+		- krass
 
 ---
 
@@ -56,6 +85,11 @@ The player recieves all items via this actor describing it.
 new Quests/poem puzzles are added when this actor describes it.
 
 consequences of selecting a course of action are described by this actor.
+
+The drive of the narrative are the hijinx your pets get into when you are not arround.
+	- quest are triggered:
+		- on other pets while the player is tending to a pet.
+		- when the player dialogues w/ pets.
 
 ---
 
@@ -145,6 +179,22 @@ players can use both keyboards and icons to play. the icon does a selected anima
 ---
 
 ## PROTOTYPE DESIGN
+
+- no animations
+- focus the most basic game mechanics, updating the player's game data
+	- Feed
+	- dress
+	- chat
+		- triggering quests
+	- Adding items to inventroy
+		- ingredients
+			- turning ingredients into potions
+		- lobopods
+		- outfits
+		- tools
+	- quests
+		- tracking all quests
+		- tracking progress
 
 1. Feed, ( at a minimal interavl, waste becomes more likely as game time goes on)
 2. Animations are simple color and position changes

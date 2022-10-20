@@ -1,4 +1,8 @@
 setSiteLabel("lobopod");
+
+// Get the day of the month. compare it to the list of prompts.
+// If matched, add card's innerHTML to the featured prompt in the about section
+
 const removeClass = (el, trgtClass) => {
 	if (el) el.classList.remove(trgtClass);
 };
@@ -102,17 +106,39 @@ renderFirstPost = function (cssSelector, response) {
 	renderPost(article, response[0]);
 };
 
+const getDaysPrompt = () => {
+	const day = new Date().getDate();
+	const promptTitles = document.querySelectorAll(".prompt-card__title-date");
+	const prompts = document.querySelectorAll(".prompt-card__body");
+
+	let index = promptTitles.length;
+	let promptDay;
+	while ("" + day !== promptDay) {
+		//while (index > 0) {
+		index--;
+		promptDay = promptTitles[index].innerText.split("/")[1];
+		//if ("" + day == promptDay) console.log(`the day's prompt is ${promptDay}`);
+	}
+	console.log(`the day's prompt is ${prompts[index].innerHTML}`);
+	return prompts[index]
+};
+
+const renderDaysPrompt = (article)=>{
+	const content = getDaysPrompt().innerHTML;
+
+	article.innerHTML = content;
+}
 renderPromptGallery = function () {
 	getPostByCategory("prompt-list")
 		.then((response) => {
 			const parent = document.querySelector(".prompts"),
-				container = document.createElement('div'),
-				title = document.createElement('h2'),
-				body = document.createElement('div');
+				container = document.createElement("div"),
+				title = document.createElement("h2"),
+				body = document.createElement("div");
 
-			title.classList.add('prompts__intro-title')
-			container.classList.add('prompts__intro')
-			body.classList.add('prompts__intro-body')
+			title.classList.add("prompts__intro-title");
+			container.classList.add("prompts__intro");
+			body.classList.add("prompts__intro-body");
 
 			title.innerText = response[0].title.rendered;
 			body.innerHTML = response[0].content.rendered;
@@ -128,7 +154,6 @@ renderPromptGallery = function () {
 		.then((response) => {
 			const cssSelector = ".prompt-card__complete";
 			const articles = document.querySelectorAll(cssSelector);
-
 			let article;
 			response.forEach((data, i) => {
 				article = articles[i];
@@ -148,12 +173,14 @@ renderComplete = function () {
 	getPostByCategory("complete")
 		.then((response) => {
 			const cssSelector = ".art-card--about";
+
 			if (response.length == 0) {
-				return (document.querySelector(cssSelector).innerHTML = "");
+				//return (document.querySelector(cssSelector).innerHTML = "");
 			}
 			const article = document.querySelector(cssSelector);
 			removeClass(article, "art-card--hidden");
-			renderLatestPost(article, response[0]);
+			//renderLatestPost(article, response[0]);
+			renderDaysPrompt(article);
 		})
 		.catch((e) => console.log(e));
 };

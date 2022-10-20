@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  dcap-server:
+    #depends_on:
+      #- dcap-certbot
+    volumes:
+      - ../lobopod/tober/dist:/var/www/lobopod
+      - ../lobopod/game/dist:/var/www/lobopod_game
+    environment:
+      LOBOPOD_GAME: ${LOBOPOD_GAME_DOMAIN}
+      LOBOPOD: ${LOBOPOD_DOMAIN}
+
+  #dcap-certbot:
+    #image: certbot/certbot
+    #container_name: dcap-certbot
+    #platform: linux/amd64
+    #volumes:
+      #- cert_data:/etc/letsencrypt
+      #- certs:/var/www/certs
+    #command: certonly --webroot --webroot-path=/var/www/certs --email ${DCAP_MAIN_EMAIL} --agree-tos --no-eff-email -d ${LOBOPOD_GAME_DOMAIN} --force-renewal
+    #command: certonly --webroot --webroot-path=/var/www/certs --email ${DCAP_MAIN_EMAIL} --agree-tos --no-eff-email -d ${LOBOPOD_DOMAIN}

@@ -75,6 +75,8 @@ Game play pay off:
 
 The key mechanic. Think of it as the game's only NPC. Everything that happens is discribed by this lone actor.
 
+The narrative is not cohiesive on its own. I want it to require the player to decide what is the thread that binds the game's cosmology together.
+
 Interactions with pets are described by this actor.
 
 The player recieves all items via this actor describing it.
@@ -145,6 +147,7 @@ Leaving a quest dialogue does nothing. The player can continue where they left o
 ---
 
 ## QUESTIONS
+ How do lobopod emotions work? 
 
 ### What's the game's pacing?
 
@@ -178,39 +181,3 @@ players can use both keyboards and icons to play. the icon does a selected anima
 
 ---
 
-## PROTOTYPE DESIGN
-
-- no animations
-- focus the most basic game mechanics, updating the player's game data
-	- Feed
-	- dress
-	- chat
-		- triggering quests
-	- Adding items to inventroy
-		- ingredients
-			- turning ingredients into potions
-		- lobopods
-		- outfits
-		- tools
-	- quests
-		- tracking all quests
-		- tracking progress
-
-1. Feed, ( at a minimal interavl, waste becomes more likely as game time goes on)
-2. Animations are simple color and position changes
-3. Feed by clicking and dragging food icon on to the crafting canvas
-4. Quest dialogue activates by asking pet
-5. Outfits are changed by dragging a hat icon onto the main canvas
-
-```
-_________________
-|bell icon
-|
-|  MAIN CANVAS
-|_______________
-icon ---------- icon
-icon | craft  | icon
-icon | canvas | icon
-icon ---------- icon
-
-```

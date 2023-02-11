@@ -119,7 +119,6 @@ const getDaysPrompt = () => {
 		promptDay = promptTitles[index].innerText.split("/")[1];
 		//if ("" + day == promptDay) console.log(`the day's prompt is ${promptDay}`);
 	}
-	console.log(`the day's prompt is ${prompts[index].innerHTML}`);
 	return prompts[index]
 };
 

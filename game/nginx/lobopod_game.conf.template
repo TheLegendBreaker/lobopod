@@ -1,0 +1,28 @@
+server {
+	listen 80;
+	listen [::]:80;
+	server_name ${LOBOPOD_GAME};
+
+	include snippets/acme.conf;
+
+	location / {
+		rewrite ^ https://${DOLLAR}host${DOLLAR}request_uri? permanent;
+	}
+ }
+
+server {
+	listen 443 ssl http2;
+	server_name ${LOBOPOD_GAME};
+	ssl_certificate /etc/letsencrypt/live/${LOBOPOD_GAME}/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/${LOBOPOD_GAME}/privkey.pem;
+
+	include snippets/acme.conf;
+	include snippets/password_access.conf;
+	include mime.types;
+
+	location / {
+		root /var/www/lobopod_game;
+		index index.html;
+		try_files ${DOLLAR}uri /index.html =404;
+	}
+}
